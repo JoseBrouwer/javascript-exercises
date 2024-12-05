@@ -11,15 +11,10 @@ const palindromes = function (sentence) {
             && isAlpha(sentence[lastIndex]))
         {
             if(sentence[i].toUpperCase() !== sentence[lastIndex].toUpperCase())
-            {
-                console.log(`${sentence[i]} IS NOT ${sentence[lastIndex]}`)
                 return false;
-            }
+
             else
-            {
-                console.log(`${sentence[i]} IS ${sentence[lastIndex]}`)
                 lastIndex--;
-            }
         }
         else
         {
